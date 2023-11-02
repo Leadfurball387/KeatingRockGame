@@ -1,0 +1,2 @@
+﻿RockGame.obj : error LNK2005: main already defined in HelloWorld.obj
+F:\C++\KeatingRockGame\x64\Debug\KeatingRockGame.exe : fatal error LNK1169: one or more multiply defined symbols found
