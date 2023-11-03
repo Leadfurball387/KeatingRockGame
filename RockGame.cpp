@@ -18,7 +18,45 @@ int main() {
 	while (row1 != 0 && row2 != 0 && row3 != 0) {
 
 		// Inverted pyramid of 'O's, representing rocks
-		std::cout << std::string(row1, "O   ") << '\n';
+
+		// 'O's for row 1
+		for (int i = row1; i > 0; i--) {
+			if (i == row1) {
+				std::cout << "1. ";
+			}
+			if (i >= 1) {
+				std::cout << "O   ";
+			}
+			if (i == 1) {
+				std::cout << '\n';
+			}
+		}
+
+		// 'O's for row 2
+		for (int i = row2; i > 0; i--) {
+			if (i == row2) {
+				std::cout << "1. ";
+			}
+			if (i >= 1) {
+				std::cout << "O   ";
+			}
+			if (i == 1) {
+				std::cout << '\n';
+			}
+		}
+
+		// 'O's for row 3
+		for (int i = row3; i > 0; i--) {
+			if (i == row3) {
+				std::cout << "1. ";
+			}
+			if (i >= 1) {
+				std::cout << "O   ";
+			}
+			if (i == 1) {
+				std::cout << '\n';
+			}
+		}
 
 		std::cout << "Please select which row you would like to take from: ";
 		std::cin >> row;
