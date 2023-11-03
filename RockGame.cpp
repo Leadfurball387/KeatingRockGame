@@ -15,7 +15,7 @@ int main() {
 	int row3{ 3 };
 
 
-	while (row1 != 0 && row2 != 0 && row3 != 0) {
+	while (row1 >= 0 && row2 >= 0 && row3 >= 0) {
 
 		// Inverted pyramid of 'O's, representing rocks
 
@@ -35,7 +35,7 @@ int main() {
 		// 'O's for row 2
 		for (int i = row2; i > 0; i--) {
 			if (i == row2) {
-				std::cout << "1. ";
+				std::cout << "2.   ";
 			}
 			if (i >= 1) {
 				std::cout << "O   ";
@@ -48,7 +48,7 @@ int main() {
 		// 'O's for row 3
 		for (int i = row3; i > 0; i--) {
 			if (i == row3) {
-				std::cout << "1. ";
+				std::cout << "3.     ";
 			}
 			if (i >= 1) {
 				std::cout << "O   ";
@@ -70,7 +70,9 @@ int main() {
 				row1 = row1 - amount;
 				if (row1 < 0) {
 					std::cout << "You took too much! Please try again.\n";
-
+				}
+				if (row1 == 0) {
+					std::cout << "1.\n";
 				}
 			}
 			else if (row == 2) {
@@ -78,11 +80,17 @@ int main() {
 				if (row2 < 0) {
 					std::cout << "You took too much! Please try again.\n";
 				}
+				if (row2 == 0) {
+					std::cout << "2.\n";
+				}
 			}
 			else if (row == 3) {
 				row3 = row3 - amount;
 				if (row3 < 0) {
 					std::cout << "You took too much! Please try again.\n";
+				}
+				if (row3 == 0) {
+					std::cout << "3.\n";
 				}
 			}
 		}
