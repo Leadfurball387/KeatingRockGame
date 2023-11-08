@@ -80,7 +80,7 @@ int main() {
 			{
 				std::cout << "\nPlease select a different row.\n";
 			} 
-			else
+			else if (row == 1)
 			{
 
 				std::cout << "\nYou have selected row " << row << ". Please state how many rocks you would like to take from row " << row << ": ";
@@ -98,7 +98,7 @@ int main() {
 			{
 				std::cout << "\nPlease select a different row.\n";
 			} 
-			else
+			else if (row == 2)
 			{
 
 				std::cout << "\nYou have selected row " << row << ". Please state how many rocks you would like to take from row " << row << ": ";
@@ -116,7 +116,7 @@ int main() {
 			{
 				std::cout << "\nPlease select a different row.\n";
 			} 
-			else
+			else if (row == 3)
 			{
 
 				std::cout << "\nYou have selected row " << row << ". Please state how many rocks you would like to take from row " << row << ": ";
